@@ -1,9 +1,6 @@
 # 📚 PROJETO CRUD RELACIONAL: GESTÃO BÁSICA DE VENDAS E PRODUTOS
 
-Projeto realizado pelos alunos: 
--Bruno Ferreira Fonseca
--Sthevan Vinicius de Araújo Martins
--Vinícius dos Anjos Almeida
+Projeto realizado pelos alunos: Bruno Ferreira Fonseca, Sthevan Vinicius de Araújo Martins, Vinícius dos Anjos Almeida
 
 Este projeto é um exercício simples de **CRUD (Create, Read, Update, Delete)** em **MySQL** para a disciplina de Banco de Dados. Ele implementa um modelo relacional básico, gerenciando informações de **clientes**, **produtos** e suas transações de **vendas**.
 
