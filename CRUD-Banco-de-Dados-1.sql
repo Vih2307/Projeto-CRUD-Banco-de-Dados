@@ -2,6 +2,7 @@ CREATE DATABASE crud_simples;
 USE crud_simples;
 
 CREATE TABLE produtos (
+    produtos_id INT AUTO_INCREMENT PRIMARY KEY,
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     preco DECIMAL(10, 2) NOT NULL,
@@ -18,17 +19,13 @@ CREATE TABLE clientes (
 );
 
 CREATE TABLE vendas (
-    -- Chave Primária da tabela Vendas
     venda_id INT AUTO_INCREMENT PRIMARY KEY,
     
-    -- Chave Estrangeira que aponta para a tabela CLIENTES
     cliente_id INT NOT NULL,
     
     data_venda DATE NOT NULL,
     valor_total DECIMAL(10, 2) NOT NULL,
     
-    -- Definição da Chave Estrangeira:
-    -- Garante que só podemos inserir vendas para um cliente_id que exista na tabela CLIENTES
     FOREIGN KEY (cliente_id) REFERENCES clientes(cliente_id)
 );
 
